@@ -48,6 +48,7 @@ Serve the site locally for testing.
 A typical SiteKit project has the following structure:
 ```bash
 myBlog/
+├─ Layout/         # Contains layout html files.
 ├─ Pages/          # Your Markdown or HTML pages
 ├─ wwwroot/        # CSS, images, JS, etc.
 ├─ sitekit.json    # Site configuration (title, properties, etc.)
@@ -84,6 +85,9 @@ https://sitekit.secure-pages.uk Is built using SiteKit.
 
 ## Speed
 SiteKit renders projects under 1 second.
+
+## Templates
+See the [Templates README](/Templates/README.md) file for more information.
 
 ## Contributing  
 

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/open-iconic/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+    <script src="js/app.js"></script>
+
+    <title>{{$Page.Title}}</title>
+</head>
+
+<html>
+<body>
+    <header>
+        <h1 class="title">{{$Page.Title}}</h1>
+    </header>
+
+    <nav id="navbar">
+        <a href="index.html">
+            <span class="oi oi-home" aria-hidden="true"></span> Home
+        </a>
+
+        <a href="about.html">
+            <span class="oi oi-home" aria-hidden="true"></span> About
+        </a>
+    </nav>
+
+    <div class="container">
+        {{$Page.Content}}
+    </div>
+
+    <footer>
+        <p>&copy; 2025 {{$Site.Name}}. All rights reserved.</p>
+    </footer>
+</body>
+</html>
