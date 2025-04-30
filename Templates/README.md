@@ -2,16 +2,21 @@
 
 ## Developing Custom Templates
 
-To create your custom templates, start with the default structure as a guide.
+Begin by using the default structure as your foundation for creating custom templates.
 
-**Folder Structure:**
+**Folder Organization:**
 ```bash
 myTemplate/
 ├─ Layout/   # Contains MainLayout.html.
-├─ Pages/    # Holds your Markdown or HTML content.
-├─ wwwroot/  # Includes CSS, images, JavaScript, etc.
+├─ Pages/    # Stores Markdown or HTML content.
+├─ wwwroot/  # Houses CSS, images, JavaScript files, etc.
 ```
 
-Once your custom template folder is set up, compress it into a `.zip` file (e.g., myTemplate.zip), ensuring that the folder contents are at the root of the archive following the above structure.
+After assembling your custom folder, compress it into a `.zip` file (for example, myTemplate.zip). Make sure that the zip archive’s root contains the folder’s inner files directly following the structure outlined above.
 
-Finally, copy the `.zip` file to the `UserDirectory/.SiteKit/templates` directory.
+Once zipped, transfer the file to the `UserDirectory/.SiteKit/templates` directory.
+
+You can then generate new projects using your custom template:
+```bash
+sitekit new myBlog --template myTemplate
+```

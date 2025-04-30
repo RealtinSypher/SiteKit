@@ -25,5 +25,12 @@ public static class TemplateManager
         return true;
     }
 
-    public static string GetPath(string templateName) => Application.GetDataPath("templates", templateName + ".zip");
+    public static string GetPath(string templateName)
+    {
+        if (!templateName.EndsWith(".zip")) {
+            templateName += ".zip";
+        }
+
+        return Application.GetDataPath("templates", templateName);
+    }
 }
