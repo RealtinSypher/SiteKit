@@ -96,7 +96,7 @@ Contributions are welcome! Please follow these steps:
 
 ## License  
 
-This project is licensed under the GNU GENERAL PUBLIC License. See the `LICENSE` file for details.  
+This project is licensed under the GPL-3.0 License. See the `LICENSE` file for details.  
 
 ## Acknowledgments  
 
